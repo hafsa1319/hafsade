@@ -22,7 +22,7 @@
         "display7Size": 1.1,
         "display4Font": "Roboto",
         "display4Size": 1,
-        "isRoundedButtons": true,
+        "isRoundedButtons": false,
         "isGhostButtonBorder": true,
         "underlinedLinks": false,
         "isAnimatedOnScroll": false,
@@ -56,7 +56,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 206,
+    "uniqCompNum": 201,
     "versionPublish": "5.6.11",
     "screenshot": "screenshot.png",
     "chatbutton": {
@@ -4250,172 +4250,6 @@
           "_params": {}
         },
         {
-          "_name": "afeatures3",
-          "_sourceTheme": "networkm5",
-          "_customHTML": "<section class=\"features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Label\" name=\"showLabel\" checked>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <select title=\"Cards Amount\" name=\"cardsAmount\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <header>Card</header>\n        <input type=\"checkbox\" title=\"Card Hover Text\" name=\"showCardText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/networkm5/components/_images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#efefef\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-left-center\">\n            \n                <div class=\"text-container\">\n                    <div class=\"text-wrapper\">\n                        <p class=\"label-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLabel\" data-app-selector=\".label-text\">\n                            Unsere Dienstleistungen</p>\n                        <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                            <b>Logo-Design-Service</b>\n                        </h2>\n                        <p class=\"mbr-text mbr-fonts-style \" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Wir können sagen, dass der Soziale Medien Management Service eine Methode ist, um zu wissen, wie Sie Ihre Seiten oder Konten in Sozialen Medien verwalten. Das Soziale Medien Management gewinnt von Tag zu Tag an Bedeutung.\n                        </p>\n                        <div class=\"btn-container\">\n                            <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Unsere Projekte</a> <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Angebot einholen</a></div>\n                        </div>\n                    </div>\n                </div>\n            \n       <!--     <div class=\"col-12 col-md-6 col-cards\">\n                <div class=\"cards-wrap\">\n                    <div class=\"card col-12 col-sm-6 col-md-4\">\n                        <div class=\"card-wrap\">\n                            <div class=\"img-container\">\n                                <div class=\"img-wrap\">\n                                    <div class=\"img-bg\"></div>\n                                    <img src=\"@ADDONS_PATH@/networkm5/components/_images/features/features4.png\">\n                                </div>\n                            </div>\n                            <div class=\"card-caption\" mbr-if=\"showCardText\">\n                                <p class=\"card-text mbr-fonts-style \" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                                    COMPANY NAME</p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card col-12 col-sm-6 col-md-4\" mbr-if=\"cardsAmount > 1\">\n                        <div class=\"card-wrap\">\n                            <div class=\"img-container\">\n                                <div class=\"img-wrap\">\n                                    <div class=\"img-bg\"></div>\n                                    <img src=\"@ADDONS_PATH@/networkm5/components/_images/features/features5.png\">\n                                </div>\n                            </div>\n                            <div class=\"card-caption\" mbr-if=\"showCardText\">\n                                <p class=\"card-text mbr-fonts-style \" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                                    COMPANY NAME</p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card col-12 col-sm-6 col-md-4\" mbr-if=\"cardsAmount > 2\">\n                        <div class=\"card-wrap\">\n                            <div class=\"img-container\">\n                                <div class=\"img-wrap\">\n                                    <div class=\"img-bg\"></div>\n                                    <img src=\"@ADDONS_PATH@/networkm5/components/_images/features/features6.png\">\n                                </div>\n                            </div>\n                            <div class=\"card-caption\" mbr-if=\"showCardText\">\n                                <p class=\"card-text mbr-fonts-style \" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                                    COMPANY NAME</p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card col-12 col-sm-6 col-md-4\" mbr-if=\"cardsAmount > 3\">\n                        <div class=\"card-wrap\">\n                            <div class=\"img-container\">\n                                <div class=\"img-wrap\">\n                                    <div class=\"img-bg\"></div>\n                                    <img src=\"@ADDONS_PATH@/networkm5/components/_images/features/features7.png\">\n                                </div>\n                            </div>\n                            <div class=\"card-caption\" mbr-if=\"showCardText\">\n                                <p class=\"card-text mbr-fonts-style \" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                                    COMPANY NAME</p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card col-12 col-sm-6 col-md-4\" mbr-if=\"cardsAmount > 4\">\n                        <div class=\"card-wrap\">\n                            <div class=\"img-container\">\n                                <div class=\"img-wrap\">\n                                    <div class=\"img-bg\"></div>\n                                    <img src=\"@ADDONS_PATH@/networkm5/components/_images/features/features8.png\">\n                                </div>\n                            </div>\n                            <div class=\"card-caption\" mbr-if=\"showCardText\">\n                                <p class=\"card-text mbr-fonts-style \" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                                    COMPANY NAME</p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card col-12 col-sm-6 col-md-4\" mbr-if=\"cardsAmount > 5\">\n                        <div class=\"card-wrap\">\n                            <div class=\"img-container\">\n                                <div class=\"img-wrap\">\n                                    <div class=\"img-bg\"></div>\n                                    <img src=\"@ADDONS_PATH@/networkm5/components/_images/features/features9.png\">\n                                </div>\n                            </div>\n                            <div class=\"card-caption\" mbr-if=\"showCardText\">\n                                <p class=\"card-text mbr-fonts-style \" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                                    COMPANY NAME</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div> -->\n        </div>\n    </div>\n</section>",
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@reverseContent)": {
-              ".row": {
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".row": {
-              "align-items": "flex-start"
-            },
-            ".col-text": {
-              "@media (max-width: 1024px) and (min-width: 768px)": {
-                "width": "100% !important"
-              }
-            },
-            ".text-container": {
-              "padding": "7.5% 0 0 0",
-              "@media (max-width: 1024px)": {
-                "padding": "0",
-                "border-bottom": "2px solid #000000"
-              }
-            },
-            ".text-wrapper": {
-              "text-align": "left",
-              "display": "flex",
-              "flex-direction": "column",
-              "align-items": "flex-start",
-              "height": "100%",
-              "padding": "0 0 0 0",
-              "margin-bottom": "20px",
-              "@media (max-width: 1024px)": {
-                "padding": "0 15% 0 0"
-              },
-              "@media (max-width: 880px)": {
-                "padding": "0 15% 0 0"
-              },
-              "@media (max-width: 767px)": {
-                "padding": "0"
-              }
-            },
-            ".label-text": {
-              "margin-left": "50px",
-              "width": "100%",
-              "margin-top": "10px",
-              "margin-bottom": "7px",
-              "color": "#8A8A8A"
-            },
-            ".mbr-section-title": {
-              "margin-left": "50px",
-              "width": "100%",
-              "color": "#000000",
-              "margin-bottom": "0"
-            },
-            ".mbr-text": {
-              "margin-left": "50px",
-              "letter-spacing": "inherit",
-              "color": "#000000",
-              "width": "100%",
-              "margin-top": "16px",
-              "margin-bottom": "0"
-            },
-            ".btn-container": {
-              "width": "100%"
-            },
-            ".mbr-section-btn": {
-              "margin-top": "20px",
-              "margin-left": "50px"
-            },
-            ".col-cards": {
-              "display": "flex",
-              "flex-wrap": "wrap",
-              "padding-top": "24px",
-              "@media (max-width: 1024px)": {
-                "width": "100% !important",
-                "padding-top": "80px"
-              }
-            },
-            ".cards-wrap": {
-              "display": "flex",
-              "flex-wrap": "wrap",
-              "width": "100%"
-            },
-            ".card": {
-              "padding": "0 15px",
-              "margin": "0 0 30px",
-              "border-radius": "0",
-              "transition": "all 0.2s ease-in-out",
-              "align-items": "center",
-              "justify-content": "center",
-              "@media (max-width: 680px)": {
-                "width": "100% !important"
-              }
-            },
-            ".card-wrap": {
-              "display": "flex",
-              "flex-direction": "column",
-              "position": "relative",
-              "&:hover": {
-                ".card-caption": {
-                  "opacity": "1",
-                  "transform": "translateY(0)"
-                }
-              }
-            },
-            ".card-caption": {
-              "display": "inline-block",
-              "width": "100%",
-              "max-width": "100%",
-              "position": "absolute",
-              "z-index": "1",
-              "height": "auto",
-              "left": "0",
-              "bottom": "100%",
-              "padding": "10px 10px",
-              "margin-bottom": "-10px",
-              "background-color": "#f9f9f9",
-              "opacity": "0",
-              "transform": "translateY(30px)",
-              "text-align": "left",
-              "transition": "opacity 0.4s ease-out, transform 0.6s cubic-bezier(0.33, 1, 0.68, 1)"
-            },
-            ".img-container": {
-              "display": "flex",
-              "justify-content": "center",
-              "@media (max-width: 680px)": {
-                "max-width": "186px",
-                "width": "100%"
-              }
-            },
-            ".img-wrap": {
-              "display": "flex",
-              "justify-content": "center",
-              "align-items": "center",
-              "position": "relative",
-              "img": {
-                "width": "100%",
-                "height": "100%",
-                "object-fit": "cover"
-              }
-            },
-            ".card-text": {
-              "color": "#8a8a8a"
-            }
-          },
-          "_cid": "tcuTQgbga5",
-          "_anchor": "afeatures3-5l",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
@@ -4428,96 +4262,123 @@
                 "width": "100%"
               }
             },
-            ".btn": {
-              "span": {
-                "order": "0",
-                "margin-right": "0.6rem",
-                "margin-left": "0"
+            ".card-wrapper": {
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "transition": "all 0.3s",
+              "border-radius": "1rem",
+              "padding": "0.5rem",
+              "background": "@iconColor",
+              "&:hover": {
+                "background": "@primaryColor"
               }
             },
-            ".counter-container": {
-              "ul": {
-                "margin": "0",
-                "list-style": "none",
-                "padding-left": "2.4rem",
-                "li": {
-                  "margin-bottom": "2rem",
-                  "position": "relative",
-                  "& when (@stylizedCounters)": {
-                    "list-style": "none",
-                    "position": "relative",
-                    "padding-left": "1rem",
-                    "&:before": {
-                      "position": "absolute",
-                      "top": "-5px",
-                      "left": "-40px",
-                      "content": "\"\"",
-                      "display": "flex",
-                      "justify-content": "center",
-                      "align-items": "center",
-                      "color": "contrast(@iconColor)",
-                      "background-color": "@iconColor",
-                      "width": "40px",
-                      "height": "40px",
-                      "border-radius": "50%",
-                      "& when (@countersType = \"circle\")": {
-                        "background": "none",
-                        "border": "1px solid @iconColor",
-                        "color": "@iconColor"
-                      },
-                      "& when (@countersType = \"square\")": {
-                        "border-radius": "0"
-                      },
-                      "& when (@mark)": {
-                        "content": "\"✓\""
-                      }
-                    }
-                  },
-                  "& when not (@stylizedCounters)": {
-                    "&:before": {
-                      "position": "absolute",
-                      "left": "-1.6rem",
-                      "content": "\"\\2022\"",
-                      "color": "@iconColor",
-                      "font-weight": "bold",
-                      "font-size": "1.4rem",
-                      "width": "1.6rem",
-                      "line-height": "1.2"
-                    }
-                  }
-                }
-              }
+            ".mbr-iconfont": {
+              "font-size": "2.4rem"
             },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#000000"
+            ".icon-wrapper": {
+              "min-width": "80px",
+              "height": "80px",
+              "padding-left": "1.5rem",
+              "color": "@iconColor1",
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            ".card-box": {
+              "padding-left": "1.5rem",
+              "width": "fit-content",
+              "min-width": "170px"
+            },
+            ".card-text": {
+              "color": "#14191e"
             },
             ".mbr-section-subtitle": {
               "color": "#777777"
             },
-            ".mbr-list": {
+            ".mbr-text, .mbr-section-btn": {
               "color": "#777777"
             },
-            "@media (max-width: 767px)": {
-              ".mbr-list": {
-                "justify-content": "center",
-                "display": "flex"
-              }
+            "p": {
+              "line-height": "25px"
+            },
+            ".ustbilgi": {
+              "border-bottom": "2px solid #000000",
+              "padding-bottom": "50px",
+              "margin-bottom": "50px",
+              "margin-left": "35px",
+              "margin-right": "35px"
+            },
+            ".hizmetler-baslik": {
+              "font-size": "38px",
+              "font-weight": "700",
+              "letter-spacing": "0",
+              "line-height": "1",
+              "margin-bottom": "20px",
+              "margin-left": "35px"
+            },
+            ".hizmetler-baslik-text": {
+              "font-size": "18px",
+              "font-weight": "400",
+              "letter-spacing": "0",
+              "line-height": "1",
+              "margin-bottom": "20px",
+              "margin-left": "35px"
+            },
+            ".teklif": {
+              "border": "1px solid",
+              "border-color": "black",
+              "padding": "10px 20px",
+              "background-color": "white",
+              "color": "black",
+              "border-radius": "35px",
+              "margin": "15px",
+              "transition": "all 0.15s",
+              "margin-bottom": "25px",
+              "margin-left": "35px"
+            },
+            ".teklif:hover": {
+              "background-color": "black",
+              "color": "white",
+              "border-radius": "35px",
+              "opacity": "0.3px"
+            },
+            ".ozellikler": {
+              "border": "1px solid",
+              "border-color": "black",
+              "padding": "10px 20px",
+              "background-color": "white",
+              "color": "black",
+              "border-radius": "35px",
+              "margin": "10px",
+              "transition": "all 0.15s",
+              "margin-bottom": "25px",
+              "margin-left": "35px"
+            },
+            ".ozellikler:hover": {
+              "background-color": "black",
+              "color": "white",
+              "border-radius": "35px",
+              "opacity": "0.3px"
             }
           },
-          "_name": "features02",
+          "_name": "features010",
           "_sourceTheme": "softwarem4",
-          "_customHTML": "<section class=\"features2\" group=\"Features\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Stylized\" name=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" condition=\"stylizedCounters\">\n        <select title=\"Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n        </select>\n        <input type=\"color\" name=\"iconColor\" title=\"Color\" value=\"#ffffff\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#efefef\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-end\">\n            <div class=\"col-12 col-md-12 md-pb col-lg-6 image-wrapper\">\n                <img src=\"@PROJECT_PATH@/assets/images/logo%20desing%20service-500x750.png\" alt=\"Mobirise\">\n            </div>\n            <div class=\"counter-container m-auto col-12 col-md-12 col-lg-6\">\n                <h3 class=\"mbr-section-subtitle align-left mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\" mbr-if=\"showSubitle\">\n                    <b>Mobile App</b>\n                </h3>\n                <h2 class=\"mbr-section-title align-left mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>Logo-Design-Service</b></h2>\n                <p class=\"mbr-text align-left mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Um den Logo-Design-Service besser zu verstehen, müssen wir zunächst über Social Media Management sprechen.<br><b>Logo-Design-Service</b><br>Um den Logo-Design-Service besser zu verstehen, müssen wir zunächst über das Soziale Medien Management sprechen.<br>Wir können sagen, dass der Soziale Medien Management Service eine Methode ist, um zu wissen, wie Sie Ihre Seiten oder Konten in Sozialen Medien verwalten. Das Soziale Medien Management gewinnt von Tag zu Tag an Bedeutung. Unterstützung finden wir mit Soziale Medien Management Services an dem Punkt, was wir in den sozialen Medien wie lange und auf welche Weise sehen werden.<br>Es ist wichtig, mit der von uns ermittelten Zielgruppe gut kommunizieren zu können. Das Soziale Medien Management ist wichtig, um zu verstehen, was sie wollen, um Dinge anzubieten, die sie interessieren und daran zu arbeiten.<br><b> Logo Design</b><br> Basierend auf dem, was wir bereits erwähnt haben, ist Logodesign im Soziale Medien Management sehr wichtig. Denn Logodesign ist eine Arbeit, die die Merkmale der Sozialen Medien, eines Unternehmens oder von Unternehmen, die wir verwendet haben, visuell darstellt.<br>Heute ist es notwendig, unsere Soziale-Medien-Konten, die von Tag zu Tag an Bedeutung gewinnen, farbig zu gestalten. In diesem Zusammenhang ist Logo-Design eine Art von Arbeit, die in den sozialen Medien wertvoll ist. Logo-Design ist ein Service, der seit der Antike verwendet wird, um eine Marke von einer anderen zu unterscheiden. Wir müssen auch oft Logo-Designs in unsere Dienstleistungen einbeziehen.<br>Jedes Produkt, das wir vermarkten werden, muss zunächst ein Logo-Design aufweisen, das die Eigenschaften dieses Produkts widerspiegelt. Es gibt einige Firmen, die diese Designs für uns machen. Hafsa.de ist eines dieser Unternehmen. Es wäre nützlich, ein separates Thema zu eröffnen, um über seine Dienstleistungen zu sprechen.<br><b> Hafsa.de Webdesign-Firma</b><br>Hafsa.de ist das beste Unternehmen, bei dem Sie viele weitere Dienstleistungen wie Soziale-Medien-Management oder Logo-Design erhalten, die wir oben erwähnt haben. Wenn Sie mit Hafsa.de arbeiten, verdoppeln Sie Ihre Qualität. Es bietet Dienstleistungen wie alle Arten von Webdesign, Websoftware, Logodesign.<br>Sie müssen Hafsa.de kennenlernen, um Ihre sozialen Medien gesund zu verwalten und Ihrem Publikum bessere Designs zu bieten. Darüber hinaus können Sie bei Hafsa.de auch eine digitale Identität haben. Darüber hinaus ist es ein Unternehmen, das mit seiner schnellen, sicheren und Hightech-Infrastruktur Dienstleistungen erbringt.</p>\n                <div class=\"mbr-list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-list\" data-multiline mbr-article>\n                    <ul>\n                        <li>App Design &amp; Research</li>\n                        <li>Development &amp; Testing</li>\n                    </ul>\n                </div>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"align-left mbr-section-btn mt-4\" mbr-if=\"showButtons\"><a class=\"btn btn-lg btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn\"></span>Learn More</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "tcv4Iooi46",
+          "_customHTML": "<section class=\"features5\" group=\"Features\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"9\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Icons</header>\n        <select title=\"Icons\" name=\"cardsAmount\">\n            <option value=\"0\" selected>0</option>\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n        </select>\n        <header condition=\"showIcon\">Color</header>\n        <input type=\"color\" name=\"iconColor\" title=\"Icon BG\" value=\"#ffffff\" condition=\"cardsAmount > 0\">\n        <input type=\"color\" title=\"Icon\" name=\"iconColor1\" value=\"#31363b\" selected condition=\"cardsAmount > 0\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#efefef\">\n    </mbr-parameters>\n    <div class=\"ustbilgi\">\n    <p class=\"hizmetler-baslik\">Logo-Design-Service</p>\n    <p class=\"hizmetler-baslik-text\">Wir können sagen, dass der Soziale Medien Management Service eine Methode ist, um zu wissen, wie Sie Ihre Seiten oder Konten in Sozialen Medien verwalten. Das Soziale Medien Management gewinnt von Tag zu Tag an Bedeutung.</p>\n    <a class=\"teklif\" href=\"#\"> Unsere Projekte </a>\n    <a class=\"ozellikler\" href=\"#\"> Angebot einholen </a>\n    \n\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-end\">\n            <div class=\"col-12 col-md-12 md-pb col-lg-6 image-wrapper\">\n                <img src=\"@PROJECT_PATH@/assets/images/logo-desing-service-500x750.png\" height=\"950\" alt=\"Mobirise\">\n            </div>\n            <div class=\"counter-container m-auto col-12 col-md-12 col-lg-6\">\n                <h3 class=\"mbr-section-subtitle align-left mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\" mbr-if=\"showSubitle\"><b>Key\n                        Features</b></h3>\n                <h2 class=\"mbr-section-title align-left mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>Logo-Design-Service</b></h2>\n                <p class=\"mbr-text align-left mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"></p><p>Um den Logo-Design-Service besser zu verstehen, müssen wir zunächst über Social Media Management sprechen.</p>\n<p><strong>Logo-Design-Service</strong></p>\n<p>Um den Logo-Design-Service besser zu verstehen, müssen wir zunächst über das Soziale Medien Management sprechen.</p>\n<p>Wir können sagen, dass der Soziale Medien Management Service eine Methode ist, um zu wissen, wie Sie Ihre Seiten oder Konten in Sozialen Medien verwalten. Das Soziale Medien Management gewinnt von Tag zu Tag an Bedeutung. Unterstützung finden wir mit Soziale Medien Management Services an dem Punkt, was wir in den sozialen Medien wie lange und auf welche Weise sehen werden.</p>\n<p>Es ist wichtig, mit der von uns ermittelten Zielgruppe gut kommunizieren zu können. Das Soziale Medien Management ist wichtig, um zu verstehen, was sie wollen, um Dinge anzubieten, die sie interessieren und daran zu arbeiten.</p>\n<p><strong>&nbsp;Logo Design</strong></p>\n<p>&nbsp;Basierend auf dem, was wir bereits erwähnt haben, ist Logodesign im Soziale Medien Management sehr wichtig. Denn Logodesign ist eine Arbeit, die die Merkmale der Sozialen Medien, eines Unternehmens oder von Unternehmen, die wir verwendet haben, visuell darstellt.</p>\n<p>Heute ist es notwendig, unsere Soziale-Medien-Konten, die von Tag zu Tag an Bedeutung gewinnen, farbig zu gestalten. In diesem Zusammenhang ist Logo-Design eine Art von Arbeit, die in den sozialen Medien wertvoll ist. Logo-Design ist ein Service, der seit der Antike verwendet wird, um eine Marke von einer anderen zu unterscheiden. Wir müssen auch oft Logo-Designs in unsere Dienstleistungen einbeziehen.</p>\n<p>Jedes Produkt, das wir vermarkten werden, muss zunächst ein Logo-Design aufweisen, das die Eigenschaften dieses Produkts widerspiegelt. Es gibt einige Firmen, die diese Designs für uns machen. Hafsa.de ist eines dieser Unternehmen. Es wäre nützlich, ein separates Thema zu eröffnen, um über seine Dienstleistungen zu sprechen.</p>\n<p><strong>&nbsp;Hafsa.de Webdesign-Firma</strong></p>\n<p>Hafsa.de ist das beste Unternehmen, bei dem Sie viele weitere Dienstleistungen wie Soziale-Medien-Management oder Logo-Design erhalten, die wir oben erwähnt haben. Wenn Sie mit Hafsa.de arbeiten, verdoppeln Sie Ihre Qualität. Es bietet Dienstleistungen wie alle Arten von Webdesign, Websoftware, Logodesign.</p>\n<p>Sie müssen Hafsa.de kennenlernen, um Ihre sozialen Medien gesund zu verwalten und Ihrem Publikum bessere Designs zu bieten. Darüber hinaus können Sie bei Hafsa.de auch eine digitale Identität haben. Darüber hinaus ist es ein Unternehmen, das mit seiner schnellen, sicheren und Hightech-Infrastruktur Dienstleistungen erbringt.</p>\n                <div class=\"row\">\n                    <div class=\"card md-pb col-12 col-md-6\" mbr-if=\"cardsAmount > 0\">\n                        <div class=\"card-wrapper\">\n                            <div class=\"icon-wrapper\">\n                                <span mbr-icon class=\"mbr-iconfont  m-auto mobi-mbri-features mobi-mbri\"></span>\n                            </div>\n                            <div class=\"card-box\">\n\n                                <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\"><b>Intregrated\n                                    </b>\n                                    <div><b>New API</b></div>\n                                </h5>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card md-pb col-12 col-md-6\" mbr-if=\"cardsAmount > 1\">\n                        <div class=\"card-wrapper\">\n                            <div class=\"icon-wrapper\">\n                                <span mbr-icon class=\"mbr-iconfont m-auto mobi-mbri-sites mobi-mbri\"></span>\n                            </div>\n                            <div class=\"card-box\">\n                                <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\"><b>Intregrated\n                                    </b>\n                                    <div><b>New API</b></div>\n                                </h5>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tbHOfIEM3H",
+          "_anchor": "features010-25",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "features02-5p"
+          "_params": {}
         },
         {
           "_name": "features4",
           "_sourceTheme": "studym5",
-          "_customHTML": "<section class=\"features4\" group=\"Features\" plugins=\"mbr-switch-arrow, mobirise-icons2\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <select title=\"Amount\" name=\"cardAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n            <option value=\"7\" selected>7</option>\n            <option value=\"8\">8</option>\n            <option value=\"9\">9</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/studym5/components/_images/background18.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-{{textWidth}}\">\n                <div class=\"align-center mb-4\" mbr-if=\"showTitle || showSubtitle\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Häufig gestellte Fragen zum Logo-Design-Service</b></h2>\n                </div>\n                <div id=\"bootstrap-accordion\" class=\"panel-group accordionStyles accordion\" role=\"tablist\" aria-multiselectable=\"true\">\n                    <div class=\"card\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Was ist Logodesign?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    Logodesign bedeutet, dass das Logo entworfen werden muss, damit es erstellt werden kann. In seiner einfachsten Form ist das Logo das, was ein Unternehmen von anderen unterscheidet. Da das Emblem allein nicht ausreicht, sollte das Logo Ihrer Marke von Profis nach Ihren Wünschen entworfen werden. Der gemeinsame Entwurf von Emblem und Logo wird in diesem Bereich als Logodesign bezeichnet. Logo ist eines der wichtigsten Werke, das die Eigenschaften eines Unternehmens oder einer Marke visuell widerspiegelt. Der Weg, sich in den Köpfen der Menschen leichter einzuprägen, führt über den ersten Eindruck, das Logo.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 1\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Was sind die Logo-Design-Arten?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    Das Logo ist ein wichtiges Detail für die Marke, um sich abzuheben und dauerhaft zu sein. Es ist das Logo, das als erster Eindruck in Erinnerung bleibt und in Farbe, Form und Inhalt einprägsam sein sollte. Heutzutage haben Produkte und Marken stark zugenommen und es ist sehr schwierig geworden, sich von den anderen abzuheben. Sie können uns kontaktieren, damit das beste Logo für Sie von professionellen Teams entworfen werden.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 2\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Wie hoch sind die Preise für Logodesign?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">                                \n                                    Die Preise für Logodesign variieren je nach gewünschtem Logo.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 3\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Was sind Logo-Design-Beispiele?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    Alle Logo-Beispiele sind im Rahmen der Projekte zu sehen.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 4\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Wie sollte ein gutes Logo sein?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">Das wichtigste Merkmal des Logos ist, dass es sich von den anderen unterscheidet und einzigartig ist.\n<br>\n<br>Es sollte für die Menschen leicht zu merken sein. Das es einfach ist ermöglicht es, dass es besser in Erinnerung bleibt, komplexe Formen bleiben nicht dauerhaft im Kopf.\n<br>\n<br>Die Texte oder Buchstaben des Logos müssen lesbar sein, schwer lesbare Texte werden von niemandem gelesen und in Erinnerung behalten.\n<br>\n<br>Die Farben und Muster im Logo sollten miteinander harmonisch sein. So wird Ihr Logo einprägsamer.</p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 5\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse6\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Warum ist Logodesign wichtig?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse6\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    Logo ist eines der wichtigsten Dinge für Marken. Im Gedächtnis der Kunden zu bleiben ermöglicht die Entwicklung dieser Marke. Das Logo gilt als die beste Werbung. Das Logo sollte von professionellen Teams erstellt werden, um sich von anderen Marken abzuheben. Ein einfaches und einprägsames, einzigartiges Logo war für Kunden schon immer attraktiver. Es reicht aus, uns zu kontaktieren und uns mitzuteilen, welche Art von Logo Sie wünschen, damit wir das beste Logo für Sie entwerfen können.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 6\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse7\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Kann ich weitere Informationen zum Logo-Design erhalten?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse7\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">                                   \n                                    Bei Fragen und mehr ist das Ausfüllen des Kontaktformulars erforderlich. Weitere Informationen erhalten Sie unter 0850 304 98 33.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 7\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse8\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">\n                                    How many hours per week will I need to complete the program?\n                                </h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse8\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">                                                                      \n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer feugiat scelerisque varius morbi enim. Eget nunc scelerisque viverra mauris.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 8\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse9\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">\n                                    If I have any questions, can I ask the speaker?\n                                </h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse9\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">                                                                                                         \n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer feugiat scelerisque varius morbi enim. Eget nunc scelerisque viverra mauris.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"features4\" group=\"Features\" plugins=\"mbr-switch-arrow, mobirise-icons2\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <select title=\"Amount\" name=\"cardAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n            <option value=\"7\" selected>7</option>\n            <option value=\"8\">8</option>\n            <option value=\"9\">9</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/studym5/components/_images/background18.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-{{textWidth}}\">\n                <div class=\"align-center mb-4\" mbr-if=\"showTitle || showSubtitle\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Häufig gestellte Fragen zum Logo-Design-Service</b></h2>\n                </div>\n                <div id=\"bootstrap-accordion\" class=\"panel-group accordionStyles accordion\" role=\"tablist\" aria-multiselectable=\"true\">\n                    <div class=\"card\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Was ist Logodesign?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    Logodesign bedeutet, dass das Logo entworfen werden muss, damit es erstellt werden kann. In seiner einfachsten Form ist das Logo das, was ein Unternehmen von anderen unterscheidet. Da das Emblem allein nicht ausreicht, sollte das Logo Ihrer Marke von Profis nach Ihren Wünschen entworfen werden. Der gemeinsame Entwurf von Emblem und Logo wird in diesem Bereich als Logodesign bezeichnet. Logo ist eines der wichtigsten Werke, das die Eigenschaften eines Unternehmens oder einer Marke visuell widerspiegelt. Der Weg, sich in den Köpfen der Menschen leichter einzuprägen, führt über den ersten Eindruck, das Logo.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 1\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Was sind die Logo-Design-Arten?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    Das Logo ist ein wichtiges Detail für die Marke, um sich abzuheben und dauerhaft zu sein. Es ist das Logo, das als erster Eindruck in Erinnerung bleibt und in Farbe, Form und Inhalt einprägsam sein sollte. Heutzutage haben Produkte und Marken stark zugenommen und es ist sehr schwierig geworden, sich von den anderen abzuheben. Sie können uns kontaktieren, damit das beste Logo für Sie von professionellen Teams entworfen werden.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 2\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Wie hoch sind die Preise für Logodesign?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">                                \n                                    Die Preise für Logodesign variieren je nach gewünschtem Logo.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 3\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Was sind Logo-Design-Beispiele?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    Alle Logo-Beispiele sind im Rahmen der Projekte zu sehen.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 4\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Wie sollte ein gutes Logo sein?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">Das wichtigste Merkmal des Logos ist, dass es sich von den anderen unterscheidet und einzigartig ist.\n<br>\n<br>Es sollte für die Menschen leicht zu merken sein. Das es einfach ist ermöglicht es, dass es besser in Erinnerung bleibt, komplexe Formen bleiben nicht dauerhaft im Kopf.\n<br>\n<br>Die Texte oder Buchstaben des Logos müssen lesbar sein, schwer lesbare Texte werden von niemandem gelesen und in Erinnerung behalten.\n<br>\n<br>Die Farben und Muster im Logo sollten miteinander harmonisch sein. So wird Ihr Logo einprägsamer.</p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 5\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse6\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Warum ist Logodesign wichtig?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse6\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                                    Logo ist eines der wichtigsten Dinge für Marken. Im Gedächtnis der Kunden zu bleiben ermöglicht die Entwicklung dieser Marke. Das Logo gilt als die beste Werbung. Das Logo sollte von professionellen Teams erstellt werden, um sich von anderen Marken abzuheben. Ein einfaches und einprägsames, einzigartiges Logo war für Kunden schon immer attraktiver. Es reicht aus, uns zu kontaktieren und uns mitzuteilen, welche Art von Logo Sie wünschen, damit wir das beste Logo für Sie entwerfen können.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 6\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse7\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">Kann ich weitere Informationen zum Logo-Design erhalten?</h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse7\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">                                   \n                                    Bei Fragen und mehr ist das Ausfüllen des Kontaktformulars erforderlich. Weitere Informationen erhalten Sie unter 0850 304 98 33.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 7\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse8\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">\n                                    How many hours per week will I need to complete the program?\n                                </h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse8\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">                                                                      \n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer feugiat scelerisque varius morbi enim. Eget nunc scelerisque viverra mauris.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\" mbr-if=\"cardAmount > 8\">\n                        <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                            <a role=\"button\" class=\"panel-title collapsed\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse9\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                <h6 class=\"panel-title-edit mbr-fonts-style mb-0 w-100\" mbr-theme-style=\"display-5\" data-app-selector=\".panel-title-edit\">\n                                    If I have any questions, can I ask the speaker?\n                                </h6>\n                                <span class=\"sign mbr-iconfont mbri-arrow-down\"></span>\n                            </a>\n                        </div>\n                        <div id=\"collapse9\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-bs-parent=\"#accordion\">\n                            <div class=\"panel-body\">\n                                <p class=\"mbr-fonts-style panel-text pt-3 m-0\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">                                                                                                         \n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer feugiat scelerisque varius morbi enim. Eget nunc scelerisque viverra mauris.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
             "padding-bottom": "(@paddingBottom * 1rem)",
