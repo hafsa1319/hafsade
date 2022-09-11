@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/web/assets/gdpr-plugin/gdpr-styles.css">
   <link rel="stylesheet" href="assets/chatbutton/floating-wpp.css">
+  <link rel="stylesheet" href="assets/popup-overlay-plugin/style.css">
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
@@ -77,7 +78,20 @@ ga('send', 'pageview');
 
 <script defer data-domain="hafsa.de" src="https://plausible.io/js/plausible.js"></script>
   
-</head>
+<meta name="theme-color" content="#bbbbbb">
+<link rel="manifest" href="manifest.json">
+<script src="sw-connect.js"></script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-640x1136.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-750x1334.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/images/apple-launch-1242x2208.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/images/apple-launch-1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-1536x2048.png">
+<link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-1668x2224.png">
+<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-2048x2732.png">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="">
+<link rel="apple-touch-icon" href="apple-touch-icon.png"></head>
 <body>
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=%MerchantId%"
@@ -109,7 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-warning display-7" href="index.html#header01-1" aria-expanded="false">Startseite</a></li>
                     
                     <li class="nav-item"><a class="nav-link link text-warning display-7" href="index.html#features014-a">
-                            Unsere Dienstleistungen</a></li><li class="nav-item"><a class="nav-link link text-warning text-primary display-7" href="index.html#gallery1-5i">Verweise</a></li><li class="nav-item"><a class="nav-link link text-warning text-primary display-7" href="team.html#content02-5d">Mannschaft</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-warning display-7" href="#" data-toggle="dropdown-submenu" aria-expanded="false">Über uns</a><div class="dropdown-menu"><a class="dropdown-item text-warning display-7" href="aboutus.html#features13-18" aria-expanded="false">Über uns</a><a class="dropdown-item text-warning display-7" href="agb.html#content02-2c">AGB</a><a class="dropdown-item text-warning display-7" href="zahlung-und-versand.html#content02-2f" aria-expanded="false">Zahlung und Versand</a><a class="dropdown-item text-warning display-7" href="impressum.html#content02-2i" aria-expanded="false">Impressum</a><a class="dropdown-item text-warning display-7" href="widerrufsbelehrung.html#content02-2o" aria-expanded="false">Widerrufsbelehrung</a><a class="dropdown-item text-warning display-7" href="datenschutz.html#content02-2l" aria-expanded="false">Datenschutz</a><a class="dropdown-item text-warning display-7" href="akkreditierungen.html#features06-4u" aria-expanded="false">Akkreditierungen</a></div></li>
+                            Unsere Dienstleistungen</a></li><li class="nav-item"><a class="nav-link link text-warning text-primary display-7" href="index.html#gallery1-5i">Verweise</a></li><li class="nav-item"><a class="nav-link link text-warning text-primary display-7" href="team.html#content02-5d">Mannschaft</a></li><li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle text-warning display-7" href="#" data-toggle="dropdown-submenu" aria-expanded="true">Über uns</a><div class="dropdown-menu"><a class="dropdown-item text-warning display-7" href="aboutus.html#features13-18" aria-expanded="false">Über uns</a><a class="dropdown-item text-warning display-7" href="agb.html#content02-2c">AGB</a><a class="dropdown-item text-warning display-7" href="zahlung-und-versand.html#content02-2f" aria-expanded="false">Zahlung und Versand</a><a class="dropdown-item text-warning display-7" href="impressum.html#content02-2i" aria-expanded="false">Impressum</a><a class="dropdown-item text-warning display-7" href="widerrufsbelehrung.html#content02-2o" aria-expanded="false">Widerrufsbelehrung</a><a class="dropdown-item text-warning display-7" href="datenschutz.html#content02-2l" aria-expanded="false">Datenschutz</a><a class="dropdown-item text-warning display-7" href="akkreditierungen.html#features06-4u" aria-expanded="false">Akkreditierungen</a></div></li>
                     <li class="nav-item"><a class="nav-link link text-warning display-7" href="contactus.html#map02-1u">Kontakt</a>
                     </li></ul>
                 <div class="icons-menu">
@@ -293,16 +307,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="content-block">
                     <div class="accordion-content">
-                        <div id="bootstrap-accordion_46" class="panel-group accordionStyles accordion " role="tablist" aria-multiselectable="true">
+                        <div id="bootstrap-accordion_85" class="panel-group accordionStyles accordion " role="tablist" aria-multiselectable="true">
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingOne">
-                                    <a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse1_46" aria-expanded="false" aria-controls="collapse1">
+                                    <a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse1_85" aria-expanded="false" aria-controls="collapse1">
                                         <h4 class="mbr-fonts-style header-text mbr-white mbr-semibold display-5">Was ist Social-Media-Management?</h4>
                                         <span class="sign mbr-iconfont mobi-mbri-plus inactive"></span>
 
                                     </a>
                                 </div>
-                                <div id="collapse1_46" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_46">
+                                <div id="collapse1_85" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_85">
                                     <div class="panel-body pt-4">
                                         <p class="mbr-fonts-style panel-text mbr-text mbr-white mb-3 mbr-regular display-7">
                                             Social Media Management hat sich in den letzten Jahren zu einem sehr beliebten und professionellen Job entwickelt. Obwohl es einfach erscheint, soziale Medien zu verwalten, erfordert es einen sehr schwierigen Prozess. Dies wird als Marketingbereich angesehen und es ist wichtig, es richtig zu machen. Die Zielgruppe muss bestimmt werden und alle Inhalte müssen entsprechend geteilt werden. Sie können für Social Media Management einen Antrag bei uns stellen, das von Experten auf diesem Gebiet durchgeführt werden sollte.</p>
@@ -312,13 +326,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingTwo">
-                                    <a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse2_46" aria-expanded="false" aria-controls="collapse2">
+                                    <a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse2_85" aria-expanded="false" aria-controls="collapse2">
                                         <h4 class="mbr-fonts-style header-text mbr-white mbr-semibold display-5">Was sind die Social-Media-Management-Arten?</h4>
                                         <span class="sign mbr-iconfont mobi-mbri-plus inactive"></span>
                                     </a>
 
                                 </div>
-                                <div id="collapse2_46" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#bootstrap-accordion_46">
+                                <div id="collapse2_85" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#bootstrap-accordion_85">
                                     <div class="panel-body pt-4">
                                         <p class="mbr-fonts-style panel-text mbr-text mbr-white mb-3 mbr-regular display-7">
                                             Bei der Verwaltung von Social Media ist es notwendig, effektive und originelle Inhalte zu finden. Inhalte, die für jeden und überall verfügbar sind, werden von den Nutzern in kurzer Zeit konsumiert und veralten. Die Wahrnehmung in die richtige Richtung zu lenken ist auch eine sehr wichtige Regel für das Social Media Management. Es ist notwendig, den Käufer der Marke gut zu identifizieren und richtig zu lenken. Darüber hinaus sollte die Auswahl der Schlüsselwörter bei der Erstellung von Inhalten korrekt erfolgen. Es ist notwendig, die Wahrnehmung durch die Auswahl punktgenauer Schlüsselwörter gut zu steuern. Die Zeiten der zu erstellenden Beiträge sind sorgfältig zu wählen. Der richtige Zeitpunkt und die richtige Inhaltsauswahl variieren je nach Zielgruppe. Nachdem die Zielgruppe ausgewählt wurde, ist es notwendig, die Zeiten zu bestimmen, in der sie aktiv sind und mehr interagieren, und in diesen Zeitzonen zu teilen.</p>
@@ -328,13 +342,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingThree">
-                                    <a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse3_46" aria-expanded="false" aria-controls="collapse3">
+                                    <a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse3_85" aria-expanded="false" aria-controls="collapse3">
                                         <h4 class="mbr-fonts-style header-text mbr-white mbr-semibold display-5">Was ist beim Social Media Management zu beachten?</h4>
                                         <span class="sign mbr-iconfont mobi-mbri-plus inactive"></span>
 
                                     </a>
                                 </div>
-                                <div id="collapse3_46" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#bootstrap-accordion_46">
+                                <div id="collapse3_85" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#bootstrap-accordion_85">
                                     <div class="panel-body pt-4">
                                         <p class="mbr-fonts-style panel-text mbr-text mbr-white mb-3 mbr-regular display-7">
                                             Das Social Media Management Ihrer Marke ist ein wichtiger Wachstumsfaktor. Social Media Management ist sehr wichtig, insbesondere im Hinblick auf das Vertrauen von soliden und dauerhaften Nutzern. Alles muss geplant und stabil sein. Es ist notwendig, die Social Media Kanäle regelmäßig zu checken und in diesem Bereich aktiv zu sein. Die ständige Kommunikation mit den Nutzern macht Sie zu einem zuverlässigen Kanal. Für Benutzer ist es wichtig, Antworten auf ihre Fragen zu erhalten und ihre Probleme zu lösen. Fortschritte sollten erzielt werden, indem die Anfragen und Beschwerden von Kunden und Followern berücksichtigt werden. So haben Sie ein dauerhafteres und effektiveres Social Media.</p>
@@ -344,13 +358,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingFour">
-                                    <a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse4_46" aria-expanded="false" aria-controls="collapse4">
+                                    <a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse4_85" aria-expanded="false" aria-controls="collapse4">
                                         <h4 class="mbr-fonts-style header-text mbr-white mbr-semibold display-5">Wie hoch sind die Preise für Social Media Management?</h4>
                                         <span class="sign mbr-iconfont mobi-mbri-plus inactive"></span>
 
                                     </a>
                                 </div>
-                                <div id="collapse4_46" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#bootstrap-accordion_46">
+                                <div id="collapse4_85" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#bootstrap-accordion_85">
                                     <div class="panel-body pt-4">
                                         <p class="mbr-fonts-style panel-text mbr-text mbr-white mb-3 mbr-regular display-7">Social Media Management wird für jedes Unternehmen zu unterschiedlichen Preisen durchgeführt. Bei der Kommunikation mit Unternehmen werden Preisspannen erlernt.
 <br>

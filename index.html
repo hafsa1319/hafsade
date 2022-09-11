@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/web/assets/gdpr-plugin/gdpr-styles.css">
   <link rel="stylesheet" href="assets/chatbutton/floating-wpp.css">
+  <link rel="stylesheet" href="assets/popup-overlay-plugin/style.css">
   <link rel="stylesheet" href="assets/smart-cart/minicart-theme.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.css">
@@ -85,7 +86,20 @@ ga('send', 'pageview');
 
 <script defer data-domain="hafsa.de" src="https://plausible.io/js/plausible.js"></script>
   
-</head>
+<meta name="theme-color" content="#bbbbbb">
+<link rel="manifest" href="manifest.json">
+<script src="sw-connect.js"></script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-640x1136.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-750x1334.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/images/apple-launch-1242x2208.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/images/apple-launch-1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-1536x2048.png">
+<link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-1668x2224.png">
+<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/images/apple-launch-2048x2732.png">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="">
+<link rel="apple-touch-icon" href="apple-touch-icon.png"></head>
 <body>
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=%MerchantId%"
@@ -117,7 +131,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-warning display-7" href="index.html#header01-1" aria-expanded="false">Startseite</a></li>
                     
                     <li class="nav-item"><a class="nav-link link text-warning display-7" href="index.html#features014-a">
-                            Unsere Dienstleistungen</a></li><li class="nav-item"><a class="nav-link link text-warning text-primary display-7" href="index.html#gallery1-5i">Verweise</a></li><li class="nav-item"><a class="nav-link link text-warning text-primary display-7" href="team.html#content02-5d">Mannschaft</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-warning display-7" href="#" data-toggle="dropdown-submenu" aria-expanded="false">Über uns</a><div class="dropdown-menu"><a class="dropdown-item text-warning display-7" href="aboutus.html#features13-18" aria-expanded="false">Über uns</a><a class="dropdown-item text-warning display-7" href="agb.html#content02-2c">AGB</a><a class="dropdown-item text-warning display-7" href="zahlung-und-versand.html#content02-2f" aria-expanded="false">Zahlung und Versand</a><a class="dropdown-item text-warning display-7" href="impressum.html#content02-2i" aria-expanded="false">Impressum</a><a class="dropdown-item text-warning display-7" href="widerrufsbelehrung.html#content02-2o" aria-expanded="false">Widerrufsbelehrung</a><a class="dropdown-item text-warning display-7" href="datenschutz.html#content02-2l" aria-expanded="false">Datenschutz</a><a class="dropdown-item text-warning display-7" href="akkreditierungen.html#features06-4u" aria-expanded="false">Akkreditierungen</a></div></li>
+                            Unsere Dienstleistungen</a></li><li class="nav-item"><a class="nav-link link text-warning text-primary display-7" href="index.html#gallery1-5i">Verweise</a></li><li class="nav-item"><a class="nav-link link text-warning text-primary display-7" href="team.html#content02-5d">Mannschaft</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-warning display-7" href="#" data-toggle="dropdown-submenu" aria-expanded="true">Über uns</a><div class="dropdown-menu"><a class="dropdown-item text-warning display-7" href="aboutus.html#features13-18" aria-expanded="false">Über uns</a><a class="dropdown-item text-warning display-7" href="agb.html#content02-2c">AGB</a><a class="dropdown-item text-warning display-7" href="zahlung-und-versand.html#content02-2f" aria-expanded="false">Zahlung und Versand</a><a class="dropdown-item text-warning display-7" href="impressum.html#content02-2i" aria-expanded="false">Impressum</a><a class="dropdown-item text-warning display-7" href="widerrufsbelehrung.html#content02-2o" aria-expanded="false">Widerrufsbelehrung</a><a class="dropdown-item text-warning display-7" href="datenschutz.html#content02-2l" aria-expanded="false">Datenschutz</a><a class="dropdown-item text-warning display-7" href="akkreditierungen.html#features06-4u" aria-expanded="false">Akkreditierungen</a></div></li>
                     <li class="nav-item"><a class="nav-link link text-warning display-7" href="contactus.html#map02-1u">Kontakt</a>
                     </li></ul>
                 <div class="icons-menu">
@@ -143,7 +157,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="mbr-overlay" style="opacity: 0; background-color: rgb(8, 12, 8);"></div>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-6 align-left">
+            <div class="col-12 col-md-6 col-lg-6 align-left">
                 
                 <h1 class="mbr-section-title mbr-white mbr-fonts-style mb-4 display-2"><strong>Ihre Website
 </strong><div><strong>ist Ihr Schaufenster
@@ -552,202 +566,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </section>
 
-<section class="content2 cid-tbPPMnBKDU" id="content02-4z">
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-12">
-                
-                
-                <p class="mbr-text mbr-fonts-style display-2"><strong>
-                    Von uns eingesetzte Technologien</strong></p>
-            </div>
-        </div>
-    </div>
-</section>
+<section data-bs-version="5.1" class="features6 cid-thaoeDBx9Q" id="features6-72">
 
-<section data-bs-version="5.1" class="features14 cid-tcraqsSDVQ" id="features014-5f">
+    
+
     
     
     <div class="container">
-        <div class="mbr-section-head mb-5">
-            
-            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-5"><strong>Languages</strong></h4>
-        </div>
-        <div class="row justify-content-center mt-4">
-            
-            
-            <div class="item features-image сol-12 col-md-9 col-lg-2 active">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="50" data-bs-slide-to="50" loading="lazy" class="lazyload" data-src="assets/images/html-316x316.png">
-                        
-                    </div>
-                    <div class="item-content">
-                        
-                        
-
-                    </div>
-                </div>
-            </div><div class="item features-image сol-12 col-md-9 col-lg-2">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="51" data-bs-slide-to="51" loading="lazy" class="lazyload" data-src="assets/images/css-316x356.png">
-                        
-                    </div>
-                    <div class="item-content">
-                        
-                        
-
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <h6 class="card-title mbr-fonts-style align-left mb-4 display-2"><strong>Von uns eingesetzte Technologien</strong></h6>
+                <p class="mbr-text mbr-fonts-style mb-3 display-5">Languages<br></p>
             </div>
-            <div class="item features-image сol-12 col-md-9 col-lg-2">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="52" data-bs-slide-to="52" loading="lazy" class="lazyload" data-src="assets/images/javascript-316x356.png">
-                        
-                    </div>
-                    <div class="item-content">
-                        
-                        
-
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image сol-12 col-md-9 col-lg-2">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="3" data-bs-slide-to="3" loading="lazy" class="lazyload" data-src="assets/images/php-316x356.png">
-                        
-                    </div>
-                    <div class="item-content">
-                        
-                    </div>
-                </div>
+            <div class="col-12">
+               <div class="image-wrapper row">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" title="" loading="lazy" class="lazyload" data-src="assets/images/html5-150x150.png"> 
+                       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" title="" loading="lazy" class="lazyload" data-src="assets/images/css3-150x150.png">
+                       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" title="" loading="lazy" class="lazyload" data-src="assets/images/javascript-150x169.png">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" title="" loading="lazy" class="lazyload" data-src="assets/images/php-150x169.png"> 
+                </div> 
             </div>
         </div>
     </div>
-</section>
-
-<section data-bs-version="5.1" class="features14 cid-tcrbKU5ZeU" id="features014-5g">
-    
-    
+    <br>
     <div class="container">
-        <div class="mbr-section-head mb-5">
-            
-            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-5"><strong>Frameworks</strong></h4>
-        </div>
-        <div class="row justify-content-center mt-4">
-            
-            
-            <div class="item features-image сol-12 col-md-9 col-lg-2 active">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="0" data-bs-slide-to="0" loading="lazy" class="lazyload" data-src="assets/images/1969px-laravel.svg-316x356.png">
-                        
-                    </div>
-                    <div class="item-content">
-                        
-                        
-
-                    </div>
-                </div>
-            </div><div class="item features-image сol-12 col-md-9 col-lg-2">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="1" data-bs-slide-to="1" loading="lazy" class="lazyload" data-src="assets/images/1200px-react.svg-1-316x356.png">
-                        
-                    </div>
-                    <div class="item-content">
-                        
-                        
-
-                    </div>
-                </div>
-            </div><div class="item features-image сol-12 col-md-9 col-lg-2">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="2" data-bs-slide-to="2" loading="lazy" class="lazyload" data-src="assets/images/vue-316x356.png">
-                        
-                    </div>
-                    <div class="item-content">
-                        
-                        
-
-                    </div>
-                </div>
-            </div><div class="item features-image сol-12 col-md-9 col-lg-2">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="3" data-bs-slide-to="3" loading="lazy" class="lazyload" data-src="assets/images/ionic.svg">
-                        
-                    </div>
-                    <div class="item-content">
-                        
-                        
-
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <p class="mbr-text mbr-fonts-style mb-3 display-5">Frameworks<br></p>
             </div>
-
-
+            <div class="col-12">
+               <div class="image-wrapper row">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" title="" loading="lazy" class="lazyload" data-src="assets/images/react-150x150.png"> 
+                       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" title="" loading="lazy" class="lazyload" data-src="assets/images/vue-150x169.png">
+                       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" title="" loading="lazy" class="lazyload" data-src="assets/images/1969px-laravel.svg-150x169.png">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" title="" loading="lazy" class="lazyload" data-src="assets/images/ionic.svg"> 
+                       
+                </div> 
+            </div>
         </div>
     </div>
-</section>
-
-<section data-bs-version="5.1" class="features14 cid-tcrdfRTOM8" id="features014-5h">
-    
-    
-    <div class="container">
-        <div class="mbr-section-head mb-5">
-            
-            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-5"><strong>Databases</strong></h4>
-        </div>
-        <div class="row justify-content-center mt-4">
-            
-            
-            <div class="item features-image сol-12 col-md-9 col-lg-2 active">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="50" data-bs-slide-to="50" loading="lazy" class="lazyload" data-src="assets/images/mysql-316x311.png">
-                        
-                    </div>
-                    <div class="item-content">
-                        
-                        
-
-                    </div>
-                </div>
-            </div><div class="item features-image сol-12 col-md-9 col-lg-2">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="51" data-bs-slide-to="51" loading="lazy" class="lazyload" data-src="assets/images/mssql-3-316x356.png">
-                        
-                    </div>
-                    <div class="item-content">
-                        
-                        
-
-                    </div>
-                </div>
-            </div><div class="item features-image сol-12 col-md-9 col-lg-2">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="52" data-bs-slide-to="52" loading="lazy" class="lazyload" data-src="assets/images/mongodb-256x256.png">
-                        
-                    </div>
-                    <div class="item-content">
-                        
-                        
-
-                    </div>
-                </div>
+    <br>
+     <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <p class="mbr-text mbr-fonts-style mb-3 display-5">Databases<br></p>
             </div>
-
-
+            <div class="col-12">
+               <div class="image-wrapper row">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" title="" loading="lazy" class="lazyload" data-src="assets/images/mysql-150x148.png"> 
+                       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" title="" loading="lazy" class="lazyload" data-src="assets/images/mssql-150x169.png">
+                       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" title="" loading="lazy" class="lazyload" data-src="assets/images/mongodb-1-150x150.png">
+                </div> 
+            </div>
         </div>
     </div>
+    <br>
+     
+    <br>
+     
 </section>
 
 <section class="features5 cid-tbGbsHGouU" id="features010-p">
@@ -793,9 +669,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
             
             <div class="col-12 col-md-6 col-lg-3 item gallery-image active">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="0" data-bs-slide-to="0" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/pialetti-1903x928.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="0" data-bs-slide-to="0" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/pialetti-1903x928.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -804,9 +680,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="1" data-bs-slide-to="1" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/primeshop.de-1905x926.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="1" data-bs-slide-to="1" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/primeshop.de-1905x926.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -815,9 +691,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="2" data-bs-slide-to="2" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/smtanatomi-1901x893.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="2" data-bs-slide-to="2" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/smtanatomi-1901x893.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -826,9 +702,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="3" data-bs-slide-to="3" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/walkiddy-1902x931.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="3" data-bs-slide-to="3" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/walkiddy-1902x931.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -837,9 +713,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="4" data-bs-slide-to="4" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/ykdesign-1902x926.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="4" data-bs-slide-to="4" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/ykdesign-1902x926.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -848,9 +724,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="5" data-bs-slide-to="5" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/moincam-1902x932.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="5" data-bs-slide-to="5" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/moincam-1902x932.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -859,9 +735,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="6" data-bs-slide-to="6" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/allreview-1900x931.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="6" data-bs-slide-to="6" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/allreview-1900x931.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -870,9 +746,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="7" data-bs-slide-to="7" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/runvid-1900x932.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="7" data-bs-slide-to="7" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/runvid-1900x932.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -881,9 +757,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="8" data-bs-slide-to="8" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/yw-remodel-1903x929.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="8" data-bs-slide-to="8" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/yw-remodel-1903x929.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -892,9 +768,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="9" data-bs-slide-to="9" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/farukhocafizyo-1902x930.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="9" data-bs-slide-to="9" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/farukhocafizyo-1902x930.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -903,9 +779,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="10" data-bs-slide-to="10" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/meegate2-1899x931.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="10" data-bs-slide-to="10" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/meegate2-1899x931.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -914,9 +790,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="11" data-bs-slide-to="11" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/frankeiselt-1899x925.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="11" data-bs-slide-to="11" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/frankeiselt-1899x925.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -925,9 +801,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="12" data-bs-slide-to="12" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/hafsatoys-1897x928.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="12" data-bs-slide-to="12" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/hafsatoys-1897x928.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -936,9 +812,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="13" data-bs-slide-to="13" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/jdsdiy-1900x920.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="13" data-bs-slide-to="13" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/jdsdiy-1900x920.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -947,9 +823,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="14" data-bs-slide-to="14" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/medzenith-1898x931.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="14" data-bs-slide-to="14" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/medzenith-1898x931.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -958,9 +834,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                 </div>
             </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-target="#tdnR5SSKQy-modal" data-bs-toggle="modal">
+                <div class="item-wrapper" data-toggle="modal" data-target="#thavUXzEZA-modal" data-bs-toggle="modal">
                     <div class="image-wrapper">
-                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="15" data-bs-slide-to="15" data-target="#lb-tdnR5SSKQy" loading="lazy" data-src="assets/images/e-ktabxana-1900x926.png">
+                        <img class="w-100 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" data-slide-to="15" data-bs-slide-to="15" data-target="#lb-thavUXzEZA" loading="lazy" data-src="assets/images/e-ktabxana-1900x926.png">
                     </div>
                     <div class="icon-wrapper">
                         <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
@@ -971,11 +847,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
 
-        <div class="modal mbr-slider" tabindex="-1" role="dialog" aria-hidden="true" id="tdnR5SSKQy-modal">
+        <div class="modal mbr-slider" tabindex="-1" role="dialog" aria-hidden="true" id="thavUXzEZA-modal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <div class="carousel slide" id="lb-tdnR5SSKQy" data-interval="5000">
+                        <div class="carousel slide" id="lb-thavUXzEZA" data-interval="5000">
                             <div class="carousel-inner">
                                 
                                 
@@ -1015,18 +891,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>
                             </div>
                             <ol class="carousel-indicators">
-                                <li data-slide-to="0" class="active" data-bs-slide-to="0" data-target="#lb-tdnR5SSKQy"></li>
-                                <li data-slide-to="1" data-bs-slide-to="1" data-target="#lb-tdnR5SSKQy"></li>
-                                <li data-slide-to="2" data-bs-slide-to="2" data-target="#lb-tdnR5SSKQy"></li>
-                                <li data-slide-to="3" data-bs-slide-to="3" data-target="#lb-tdnR5SSKQy"></li><li data-slide-to="4" data-bs-slide-to="4" data-target="#lb-tdnR5SSKQy"></li><li data-slide-to="5" data-bs-slide-to="5" data-target="#lb-tdnR5SSKQy"></li><li data-slide-to="6" data-bs-slide-to="6" data-target="#lb-tdnR5SSKQy"></li><li data-slide-to="7" data-bs-slide-to="7" data-target="#lb-tdnR5SSKQy"></li><li data-slide-to="8" data-bs-slide-to="8" data-target="#lb-tdnR5SSKQy"></li><li data-slide-to="9" data-bs-slide-to="9" data-target="#lb-tdnR5SSKQy"></li><li data-slide-to="10" data-bs-slide-to="10" data-target="#lb-tdnR5SSKQy"></li><li data-slide-to="11" data-bs-slide-to="11" data-target="#lb-tdnR5SSKQy"></li><li data-slide-to="12" data-bs-slide-to="12" data-target="#lb-tdnR5SSKQy"></li><li data-slide-to="13" data-bs-slide-to="13" data-target="#lb-tdnR5SSKQy"></li><li data-slide-to="14" data-bs-slide-to="14" data-target="#lb-tdnR5SSKQy"></li><li data-slide-to="15" data-bs-slide-to="15" data-target="#lb-tdnR5SSKQy"></li>
+                                <li data-slide-to="0" class="active" data-bs-slide-to="0" data-target="#lb-thavUXzEZA"></li>
+                                <li data-slide-to="1" data-bs-slide-to="1" data-target="#lb-thavUXzEZA"></li>
+                                <li data-slide-to="2" data-bs-slide-to="2" data-target="#lb-thavUXzEZA"></li>
+                                <li data-slide-to="3" data-bs-slide-to="3" data-target="#lb-thavUXzEZA"></li><li data-slide-to="4" data-bs-slide-to="4" data-target="#lb-thavUXzEZA"></li><li data-slide-to="5" data-bs-slide-to="5" data-target="#lb-thavUXzEZA"></li><li data-slide-to="6" data-bs-slide-to="6" data-target="#lb-thavUXzEZA"></li><li data-slide-to="7" data-bs-slide-to="7" data-target="#lb-thavUXzEZA"></li><li data-slide-to="8" data-bs-slide-to="8" data-target="#lb-thavUXzEZA"></li><li data-slide-to="9" data-bs-slide-to="9" data-target="#lb-thavUXzEZA"></li><li data-slide-to="10" data-bs-slide-to="10" data-target="#lb-thavUXzEZA"></li><li data-slide-to="11" data-bs-slide-to="11" data-target="#lb-thavUXzEZA"></li><li data-slide-to="12" data-bs-slide-to="12" data-target="#lb-thavUXzEZA"></li><li data-slide-to="13" data-bs-slide-to="13" data-target="#lb-thavUXzEZA"></li><li data-slide-to="14" data-bs-slide-to="14" data-target="#lb-thavUXzEZA"></li><li data-slide-to="15" data-bs-slide-to="15" data-target="#lb-thavUXzEZA"></li>
                             </ol>
                             <a role="button" href="" class="close" data-dismiss="modal" aria-label="Close">
                             </a>
-                            <a class="carousel-control-prev carousel-control" role="button" data-slide="prev" href="#lb-tdnR5SSKQy">
+                            <a class="carousel-control-prev carousel-control" role="button" data-slide="prev" href="#lb-thavUXzEZA">
                                 <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next carousel-control" role="button" data-slide="next" href="#lb-tdnR5SSKQy">
+                            <a class="carousel-control-next carousel-control" role="button" data-slide="next" href="#lb-thavUXzEZA">
                                 <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -1051,7 +927,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="col-lg-12 m-auto mbr-form" data-form-type="formoid">
                     <!--Formbuilder Form-->
-                    <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="ja1uLUEjdTDYewADZdFRi96LMKWs72H1+Gps6jGoAnxSBJnE1g7Am2PxFYX+JJd5WR98dkPprGYSUMGSVHGx+rZWr0LQBLumZ6MjiptmwsH4vH5hxh3i/Drhp2enPIPR.g2Ch9K8pqM6D0VHeLCegJMiwMJrrMG9U3Cf0nI1zH0l+hVmQrX0wnOlYorkxWj+RR0N5vhRduILoums1QteUwiUrd2lwDJHwZSvYYG8siO2A8CgI1+pBJM5lIksfHlsK">
+                    <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="EU6Av4jbVoazJJO4chqLR5980NS9KZbdXTncSpTIxLCzchR53GnSR53bsuL2H3zH3zoIWs9uhc5xblJy2LdT1YJos6v3JVxk14WI/5/lg8hgtLQJvDGNekhVeQaXk0JG.KADlI1bdwT9QAu5GGPrT7XleeYiAYolV9SOBMlOsaceejLwZtajigAR07gZcvQIDq4MTNcEwrJWVsNjcIzLlY+ER6ifBIfqK/7SUJuuvcqtpooxqWYLOWLdV7+qn0JLG">
                         <div class="form-row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling
                                 out the form!</div>
